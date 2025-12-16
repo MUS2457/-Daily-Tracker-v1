@@ -4,8 +4,7 @@ A simple command-line Daily Tracker built with Python to record my daily activit
 
 This project focuses on clean logic, modular design, and real-world data handling, following good software practices while remaining beginner-friendly.
 
-🚀 Features
-✅ Add Daily Data
+* Add Daily Data
 
 Choose a task type (coding, gym, work, study)
 
@@ -29,7 +28,7 @@ Mood frequency
 
 Average mood score
 
-💾 Persistent Storage
+* Persistent Storage
 
 Saves daily data with a timestamp in JSON format
 
@@ -37,7 +36,7 @@ Loads previously saved history safely
 
 Prevents overwriting existing data
 
-🧠 Project Structure
+* Project Structure
 DailyTracker/
 │
 ├── main.py           # Menu & program flow
@@ -63,7 +62,7 @@ Mood frequency:
 Average mood score: 2.33
 Data saved successfully ✅
 
-🎯 Design Philosophy
+* Design Philosophy
 
 Small, focused functions (single responsibility)
 
@@ -75,7 +74,7 @@ Built step-by-step and improved version by version
 
 Beginner-friendly but structured like real projects
 
-🧪 What This Project Practices
+* What This Project Practices
 
 Lists & dictionaries (including nested data)
 
