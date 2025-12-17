@@ -20,19 +20,21 @@ while True:
 
     elif choice == "2":
         daily = input_data.daily_data()
-
+        time_task = calculation.time_per_task(daily)
         total_t = calculation.total_time(daily)
         most_task, least_task = calculation.extreme_tasks(daily)
         fq_mood = calculation.mood_frequency(daily)
         avg_mood = calculation.average_mood(daily)
 
         print("\n--- Daily Summary ---")
-
         print(
             f"Total time spent: "
             f"{total_t['total minutes']} minutes "
             f"({total_t['total hours']:.2f} hours)"
         )
+        print("total time spent per task: ")
+        for item,info in time_task.items():
+            print(f"{item}: {info}")
 
         print(f"Most time spent on : {most_task}")
         print(f"Least time spent on: {least_task}")
