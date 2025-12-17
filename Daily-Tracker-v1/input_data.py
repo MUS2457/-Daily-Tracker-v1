@@ -21,11 +21,13 @@ def daily_data() :
             continue
         mood_user = input(f"Enter one of the following options : {mood} .").lower().strip()
         if mood_user not in mood :
+            print("Please enter a valid mood.")
             continue
         note = input("Enter note : ").strip()
         data.append({"task": track_user, "duration": duration, "mood": mood_user,"note": note})
 
     return data
+
 
 
 
